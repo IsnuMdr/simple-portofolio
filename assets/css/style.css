@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    font-size: 30px;
+    color: rgb(67, 94, 94);
+    font-weight: bold;
+}
+
+a {
+    color: rgb(172, 167, 167);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background: url('/assets/img/jumbotron-bg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    background-position: 0;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: rgb(67, 94, 94);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-right: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.logo {
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.jumbotron {
+    color: white;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron p {
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.typed-text {
+    font-weight: bold;
+    color: rgb(140, 197, 197);
+    text-decoration: underline;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #fff;
+    margin-left: 0.2rem;
+    animation: blink 1s infinite;
+}
+
+.cursor .typing {
+    animation: none;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: rgb(67, 94, 94);
+    animation: load-html 2s;
+}
+
+.css {
+    width: 75%;
+    background-color: rgb(67, 94, 94);
+    animation: load-css 2s;
+}
+
+.js {
+    width: 55%;
+    background-color: rgb(67, 94, 94);
+    animation: load-js 2s;
+
+}
+
+input[type=text],
+select,
+textarea {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background-color: rgb(67, 94, 94);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(50, 83, 83);
+}
+
+
+aside {
+    text-align: center;
+}
+
+aside img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.about-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.about-bg {
+    background-color: rgb(67, 94, 94);
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+.about-content {
+    position: relative;
+    top: -100px;
+    padding: 20px;
+}
+
+.about-sosmed img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -100px;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(43, 58, 58);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Responsive */
+
+@media(min-width: 720px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #content {
+        width: 73%;
+    }
+
+    aside {
+        text-align: center;
+        width: 26%;
+    }
+
+    nav {
+        background-color: rgb(67, 94, 94);
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 9;
+        box-sizing: border-box;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+
+    .line-hover::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .3s;
+    }
+
+
+    .line-hover:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+
+    .logo {
+        letter-spacing: 1px;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding-top: 5px;
+    }
+}
+
+/* Skills Bar */
+
+@keyframes load-html {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes load-css {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes load-js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+/* Kursor ketik */
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
